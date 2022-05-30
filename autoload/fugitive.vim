@@ -5076,7 +5076,7 @@ function! s:DoStageUnpushed(record) abort
   if branch ==# '*'
     return
   endif
-  call feedkeys(':Git push ' . remote . ' ' . a:record.commit . ':' . 'refs/for/master)
+  call feedkeys(':Git push ' . remote . ' ' . a:record.commit . ':refs/for/master')
 endfunction
 
 function! s:DoToggleUnpushed(record) abort
